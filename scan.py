@@ -19,12 +19,25 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 OWNER = "zuujiscom"
 
 
+def sonar(path):
+    with urllib.request.urlopen(f"https://sonarcloud.io/api/{path}", timeout=30) as r:
+        return json.load(r)
+
+
+def autoscan(key):
+    s = sonar(f"settings/values?component={key}&keys=sonar.autoscan.enabled")["settings"]
+    return bool(s) and s[0].get("value", s[0].get("parentValue")) == "true"
+
+
 def repos():
-    url = f"https://sonarcloud.io/api/components/search?organization={OWNER}&qualifiers=TRK&ps=500"
+    """Projects with Automatic Analysis on are left out: SonarCloud analyses those itself and rejects CI scans."""
     try:
-        with urllib.request.urlopen(url, timeout=30) as r:
-            keys = [c["key"] for c in json.load(r)["components"]]
-        return sorted(k[len(OWNER) + 1:] for k in keys if k.startswith(OWNER + "_"))
+        keys = [c["key"] for c in sonar(f"components/search?organization={OWNER}&qualifiers=TRK&ps=500")["components"]]
+        keys = [k for k in keys if k.startswith(OWNER + "_")]
+        auto = [k for k in keys if autoscan(k)]
+        if auto:
+            print(f"Automatic Analysis, not scanned here: {', '.join(k[len(OWNER) + 1:] for k in auto)}", file=sys.stderr)
+        return sorted(k[len(OWNER) + 1:] for k in keys if k not in auto)
     except Exception as e:
         print(f"::warning::couldn't list SonarCloud projects ({e}); using repos.txt", file=sys.stderr)
         return [l.strip() for l in open(os.path.join(ROOT, "repos.txt")) if l.strip() and not l.startswith("#")]
