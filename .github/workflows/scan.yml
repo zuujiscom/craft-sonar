@@ -1,14 +1,14 @@
 name: SonarCloud
 
-# Scans each zuujiscom craft mirror's main with SonarCloud (organization zuujiscom) when it has moved.
-# The mirrors keep storytold's own sonarcloud.yml switched off: it reports to storytold's organization.
+# Scans every repo that has a project in SonarCloud organization zuujiscom when its default branch moved.
+# The craft mirrors keep storytold's own sonarcloud.yml switched off: it reports to storytold's organization.
 on:
   schedule:
     - cron: "43 */2 * * *"
   workflow_dispatch:
     inputs:
       repos:
-        description: "Repos to scan, space-separated (empty = every repo whose main moved)"
+        description: "Repos to scan, space-separated (empty = every repo whose default branch moved)"
         type: string
         default: ""
       force:

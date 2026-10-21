@@ -1,23 +1,33 @@
 #!/usr/bin/env python3
-"""Decides which mirrors to scan and records the results.
+"""Decides which repos to scan and records the results.
 
-    scan.py plan [--force] [repo...]   prints `matrix=<json>` for $GITHUB_OUTPUT: every repo in repos.txt
-                                       (or the ones named) whose main moved since its last scan
+    scan.py plan [--force] [repo...]   prints `matrix=<json>` for $GITHUB_OUTPUT: every repo with a project
+                                       in the SonarCloud organization (or the ones named) whose default
+                                       branch moved since its last scan
     scan.py record <results dir>       reads <results dir>/result-<repo>/result.json, rewrites
                                        scanned.json and STATUS.md
 
-The mirrors are zuujiscom/<repo>, kept equal to storytold's main by craft-fork-sync, so nothing here
-touches them: each scan checks out the mirror and sends it to SonarCloud organization zuujiscom
-as project zuujiscom_<repo>.
+The repos to scan are the projects in SonarCloud organization zuujiscom (key zuujiscom_<repo>, as
+SonarCloud names imported GitHub repos), so adding or removing a project there is all it takes;
+repos.txt is only the fallback when SonarCloud can't be reached. Nothing here touches the repos: the
+craft mirrors stay equal to storytold's main (craft-fork-sync), so each scan checks a repo out and
+sends it to SonarCloud from here.
 """
-import datetime, glob, json, os, subprocess, sys
+import datetime, glob, json, os, subprocess, sys, urllib.request
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OWNER = "zuujiscom"
 
 
 def repos():
-    return [l.strip() for l in open(os.path.join(ROOT, "repos.txt")) if l.strip() and not l.startswith("#")]
+    url = f"https://sonarcloud.io/api/components/search?organization={OWNER}&qualifiers=TRK&ps=500"
+    try:
+        with urllib.request.urlopen(url, timeout=30) as r:
+            keys = [c["key"] for c in json.load(r)["components"]]
+        return sorted(k[len(OWNER) + 1:] for k in keys if k.startswith(OWNER + "_"))
+    except Exception as e:
+        print(f"::warning::couldn't list SonarCloud projects ({e}); using repos.txt", file=sys.stderr)
+        return [l.strip() for l in open(os.path.join(ROOT, "repos.txt")) if l.strip() and not l.startswith("#")]
 
 
 def scanned():
@@ -25,7 +35,7 @@ def scanned():
 
 
 def head(repo):
-    out = subprocess.run(["gh", "api", f"repos/{OWNER}/{repo}/commits/main", "-q", ".sha"],
+    out = subprocess.run(["gh", "api", f"repos/{OWNER}/{repo}/commits/HEAD", "-q", ".sha"],
                          capture_output=True, text=True, check=True)
     return out.stdout.strip()
 
