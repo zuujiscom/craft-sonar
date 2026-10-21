@@ -1,0 +1,101 @@
+name: SonarCloud
+
+# Scans each zuujiscom craft mirror's main with SonarCloud (organization zuujiscom) when it has moved.
+# The mirrors keep storytold's own sonarcloud.yml switched off: it reports to storytold's organization.
+on:
+  schedule:
+    - cron: "43 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      repos:
+        description: "Repos to scan, space-separated (empty = every repo whose main moved)"
+        type: string
+        default: ""
+      force:
+        description: "Scan even when main hasn't moved"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sonar
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - id: plan
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HAS_TOKEN: ${{ secrets.SONAR_TOKEN != '' }}
+        run: |
+          if [ "$HAS_TOKEN" != true ]; then
+            echo "::notice::SONAR_TOKEN isn't set on this repo yet; nothing to scan"
+            echo "matrix=[]" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          python3 scan.py plan ${{ inputs.force && '--force' || '' }} ${{ inputs.repos }} >> "$GITHUB_OUTPUT"
+
+  scan:
+    needs: plan
+    if: needs.plan.outputs.matrix != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: zuujiscom/${{ matrix.repo }}
+          ref: ${{ matrix.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+          path: src
+      - id: sonar
+        uses: SonarSource/sonarqube-scan-action@d209202bc7d53ff1cc128f7f907dac145c9d6ae9 # v8.3.0
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: https://sonarcloud.io
+        with:
+          projectBaseDir: src
+          args: >
+            -Dsonar.projectKey=zuujiscom_${{ matrix.repo }}
+            -Dsonar.organization=zuujiscom
+      - if: always()
+        run: |
+          mkdir -p "result-${{ matrix.repo }}"
+          ok=$([ "${{ steps.sonar.outcome }}" = success ] && echo true || echo false)
+          printf '{"repo": "%s", "sha": "%s", "ok": %s}\n' "${{ matrix.repo }}" "${{ matrix.sha }}" "$ok" > "result-${{ matrix.repo }}/result.json"
+      - if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: result-${{ matrix.repo }}
+          path: result-${{ matrix.repo }}/
+
+  record:
+    needs: [plan, scan]
+    if: always() && needs.plan.outputs.matrix != '[]' && needs.plan.outputs.matrix != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: result-*
+          path: results
+      - run: python3 scan.py record results
+      - run: |
+          git config user.name zuujiscom
+          git config user.email zuujis@gmail.com
+          git add scanned.json STATUS.md
+          git diff --cached --quiet || { git commit -q -m "Record scans" && git push; }
