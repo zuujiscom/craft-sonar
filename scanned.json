@@ -32,8 +32,8 @@
     "sha": "2961258879214867b88310e57787edc4d36570b8"
   },
   "figcraft": {
-    "at": "2026-10-26 05:25 UTC",
-    "sha": "26291aff2ccbad585991fea196c8d56b63dd177f"
+    "at": "2026-10-26 13:33 UTC",
+    "sha": "63d926876ffdb22f0c934a65c8130ba23f73cc7c"
   },
   "filmcraft": {
     "at": "2026-10-26 05:25 UTC",
@@ -48,8 +48,8 @@
     "sha": "bb08a697a41b2561a54f1b740245119503b24758"
   },
   "pdfcraft": {
-    "at": "2026-10-26 05:25 UTC",
-    "sha": "01b696df2c79636ff6ea737e6b02eff634d99f6c"
+    "at": "2026-10-26 13:33 UTC",
+    "sha": "64e0868b844e0230027a493c90d6e4bdc7af086f"
   },
   "photocraft": {
     "at": "2026-10-26 05:25 UTC",
@@ -60,11 +60,11 @@
     "sha": "7dc56a4dbeebf57eacece09536726c57844fc59d"
   },
   "vectorcraft": {
-    "at": "2026-10-26 05:25 UTC",
-    "sha": "03b16c8914739332a6daab096da1c33ffc6395c0"
+    "at": "2026-10-26 13:33 UTC",
+    "sha": "7c13424afca7c86b2e5763e7886eecff47a91a45"
   },
   "wordcraft": {
-    "at": "2026-10-26 05:25 UTC",
-    "sha": "438775cea155337f6cb0773444a1f36aae2d9fec"
+    "at": "2026-10-26 13:33 UTC",
+    "sha": "6a2b520fa49aa0d0595cea36589aaf16ca371cd3"
   }
 }
