@@ -1,7 +1,7 @@
 {
   "cadcraft": {
-    "at": "2026-10-28 09:01 UTC",
-    "sha": "56542407292b911ad30523cfcfa987923fe2f8e2"
+    "at": "2026-10-28 16:53 UTC",
+    "sha": "fbd97d432cdf36a566c0c53739481bd6f0c32b0d"
   },
   "craft-ai-integrations": {
     "at": "2026-10-27 22:42 UTC",
@@ -20,28 +20,28 @@
     "sha": "b4afa6d22ae41bd36524c32dbcab3ff257ae4cdd"
   },
   "deckcraft": {
-    "at": "2026-10-27 22:42 UTC",
-    "sha": "55e5ee56b4b2c64973b78fda4182a78f9766fa62"
+    "at": "2026-10-28 16:53 UTC",
+    "sha": "29f0f7772c47aa2bfb74fcbb0c4d3b1503300849"
   },
   "designcraft": {
-    "at": "2026-10-27 22:42 UTC",
-    "sha": "2d8207ed3c205f52aa46080ae183fef7692efb7e"
+    "at": "2026-10-28 16:53 UTC",
+    "sha": "7da69c16ce221f46e8f27cb41e0c88167c8be416"
   },
   "effectcraft": {
-    "at": "2026-10-27 22:42 UTC",
-    "sha": "af415aa6e1ed8e922411fa9c7c6adeed3538e8a1"
+    "at": "2026-10-28 16:53 UTC",
+    "sha": "fa9cf47175834162806b6b03d83fb2f4bdaeeafa"
   },
   "figcraft": {
     "at": "2026-10-27 22:42 UTC",
     "sha": "90054a89c4ca8a96db6e3a26cd3af3a475eaa2d7"
   },
   "filmcraft": {
-    "at": "2026-10-27 22:42 UTC",
-    "sha": "176e6a9c585fd29e4b18d691663fe88a936c5b37"
+    "at": "2026-10-28 16:53 UTC",
+    "sha": "a2d8e9ce269aba9c399e36262522e11456df6fbf"
   },
   "gridcraft": {
-    "at": "2026-10-27 22:42 UTC",
-    "sha": "11bb67386c9bb19b0717e21e98adc608162ae2e5"
+    "at": "2026-10-28 16:53 UTC",
+    "sha": "43284377d2466037628e57d8ad0c891778fdb45c"
   },
   "lightcraft": {
     "at": "2026-10-28 09:01 UTC",
@@ -56,15 +56,15 @@
     "sha": "1f7fc0f53696e54da79b95015abb37d7c22cdd1a"
   },
   "soundcraft": {
-    "at": "2026-10-28 01:41 UTC",
-    "sha": "e82c1689b31ae4941472068ebcd37b12bd4cecf0"
+    "at": "2026-10-28 16:53 UTC",
+    "sha": "c6befe57afd0dc35fc4b86a01b2a19011ae1df1e"
   },
   "vectorcraft": {
     "at": "2026-10-28 09:01 UTC",
     "sha": "9997ff021503e4f323f084fb7e64618d209d0126"
   },
   "wordcraft": {
-    "at": "2026-10-28 09:01 UTC",
-    "sha": "c4fafc215490a0186ee750454b1ce73a9823daed"
+    "at": "2026-10-28 16:53 UTC",
+    "sha": "3de6ff95af86c19d67030cd96dba15cd6a45a25e"
   }
 }
