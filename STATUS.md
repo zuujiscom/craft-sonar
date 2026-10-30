@@ -1,22 +1,14 @@
 # Status
 
-Last run 2026-10-30 13:37 UTC.
+Last run 2026-10-30 19:44 UTC.
 
 | Repo | Commit | Result |
 | --- | --- | --- |
-| cadcraft | f536bf406f | scanned |
-| craft-libs | 04aa1703b3 | scanned |
-| deckcraft | 3a4e30e10e | scanned |
-| designcraft | ea08e4c2ba | scanned |
-| effectcraft | ec7ced1f05 | scanned |
-| figcraft | 4a9a5084bb | scanned |
-| filmcraft | fed0f42fd5 | scanned |
-| gridcraft | 68a4b1a1c3 | scanned |
-| pdfcraft | 1d1cbc4ec9 | scanned |
-| photocraft | b1cfff9d30 | scanned |
-| soundcraft | 7902d59b47 | scanned |
-| vectorcraft | 3dc3550c2f | scanned |
-| wordcraft | 3b7f7ed10b | scanned |
+| figcraft | 6bc8d39433 | scanned |
+| lightcraft | 5194cc20de | scanned |
+| photocraft | 952c328b3d | scanned |
+| vectorcraft | 2166aca02e | scanned |
+| wordcraft | 5b5810fe1f | scanned |
 
 ## Last good scan
 
@@ -30,12 +22,12 @@ Last run 2026-10-30 13:37 UTC.
 | deckcraft | 3a4e30e10e | 2026-10-30 13:37 UTC | [zuujiscom_deckcraft](https://sonarcloud.io/project/overview?id=zuujiscom_deckcraft) |
 | designcraft | ea08e4c2ba | 2026-10-30 13:37 UTC | [zuujiscom_designcraft](https://sonarcloud.io/project/overview?id=zuujiscom_designcraft) |
 | effectcraft | ec7ced1f05 | 2026-10-30 13:37 UTC | [zuujiscom_effectcraft](https://sonarcloud.io/project/overview?id=zuujiscom_effectcraft) |
-| figcraft | 4a9a5084bb | 2026-10-30 13:37 UTC | [zuujiscom_figcraft](https://sonarcloud.io/project/overview?id=zuujiscom_figcraft) |
+| figcraft | 6bc8d39433 | 2026-10-30 19:44 UTC | [zuujiscom_figcraft](https://sonarcloud.io/project/overview?id=zuujiscom_figcraft) |
 | filmcraft | fed0f42fd5 | 2026-10-30 13:37 UTC | [zuujiscom_filmcraft](https://sonarcloud.io/project/overview?id=zuujiscom_filmcraft) |
 | gridcraft | 68a4b1a1c3 | 2026-10-30 13:37 UTC | [zuujiscom_gridcraft](https://sonarcloud.io/project/overview?id=zuujiscom_gridcraft) |
-| lightcraft | b2d89895ad | 2026-10-30 06:31 UTC | [zuujiscom_lightcraft](https://sonarcloud.io/project/overview?id=zuujiscom_lightcraft) |
+| lightcraft | 5194cc20de | 2026-10-30 19:44 UTC | [zuujiscom_lightcraft](https://sonarcloud.io/project/overview?id=zuujiscom_lightcraft) |
 | pdfcraft | 1d1cbc4ec9 | 2026-10-30 13:37 UTC | [zuujiscom_pdfcraft](https://sonarcloud.io/project/overview?id=zuujiscom_pdfcraft) |
-| photocraft | b1cfff9d30 | 2026-10-30 13:37 UTC | [zuujiscom_photocraft](https://sonarcloud.io/project/overview?id=zuujiscom_photocraft) |
+| photocraft | 952c328b3d | 2026-10-30 19:44 UTC | [zuujiscom_photocraft](https://sonarcloud.io/project/overview?id=zuujiscom_photocraft) |
 | soundcraft | 7902d59b47 | 2026-10-30 13:37 UTC | [zuujiscom_soundcraft](https://sonarcloud.io/project/overview?id=zuujiscom_soundcraft) |
-| vectorcraft | 3dc3550c2f | 2026-10-30 13:37 UTC | [zuujiscom_vectorcraft](https://sonarcloud.io/project/overview?id=zuujiscom_vectorcraft) |
-| wordcraft | 3b7f7ed10b | 2026-10-30 13:37 UTC | [zuujiscom_wordcraft](https://sonarcloud.io/project/overview?id=zuujiscom_wordcraft) |
+| vectorcraft | 2166aca02e | 2026-10-30 19:44 UTC | [zuujiscom_vectorcraft](https://sonarcloud.io/project/overview?id=zuujiscom_vectorcraft) |
+| wordcraft | 5b5810fe1f | 2026-10-30 19:44 UTC | [zuujiscom_wordcraft](https://sonarcloud.io/project/overview?id=zuujiscom_wordcraft) |
