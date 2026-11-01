@@ -5,7 +5,6 @@ craft-fonts
 craft-fork-sync
 craft-i18n
 craft-libs
-craft-web-overrides
 deckcraft
 designcraft
 effectcraft
