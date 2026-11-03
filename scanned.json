@@ -1,7 +1,7 @@
 {
   "cadcraft": {
-    "at": "2026-11-02 20:37 UTC",
-    "sha": "dae4b7b2f564b9870a97213a5f9ec31f65d56883"
+    "at": "2026-11-03 02:45 UTC",
+    "sha": "c956baa3493743b83c2a389869e0308cd7130f87"
   },
   "craft-ai-integrations": {
     "at": "2026-11-02 01:50 UTC",
@@ -12,59 +12,59 @@
     "sha": "aced4137c022f1f587624d48e81ec77e1914a9cc"
   },
   "craft-i18n": {
-    "at": "2026-11-02 01:50 UTC",
-    "sha": "4504e288935aa098b07196802ad7edf36f62a075"
+    "at": "2026-11-03 02:45 UTC",
+    "sha": "20467b63558f04fe075e83aaea501bd10f7fa684"
   },
   "craft-libs": {
-    "at": "2026-11-02 20:37 UTC",
-    "sha": "ea1fbeb05b94bb692b27b687adb2ac1e5abc640f"
+    "at": "2026-11-03 02:45 UTC",
+    "sha": "47c9f62530db72bc5c3831c86653b47b20c640be"
   },
   "deckcraft": {
-    "at": "2026-11-02 20:37 UTC",
-    "sha": "0d45a64db23baa0a4c8f9f7ac14c59c91b40fec9"
+    "at": "2026-11-03 02:45 UTC",
+    "sha": "3e178d8f5a59c787a6a53a7ed0f052b3e4a1489f"
   },
   "designcraft": {
-    "at": "2026-11-02 20:37 UTC",
-    "sha": "81cca513ba3120900b7f81a05df48b5672ee9a7b"
+    "at": "2026-11-03 02:45 UTC",
+    "sha": "e79d682e02dc66f14370958b193bfa46072b2f41"
   },
   "effectcraft": {
-    "at": "2026-11-02 20:37 UTC",
-    "sha": "a646bdcc2e7b9684c40f0fc83bab77eb62fa645b"
+    "at": "2026-11-03 02:45 UTC",
+    "sha": "7870b5916ae0749d497d880989683bf2946d6c8b"
   },
   "figcraft": {
-    "at": "2026-11-02 20:37 UTC",
-    "sha": "e65ce42000ea2bd3c31d14f6c7e47d14bc6ab164"
+    "at": "2026-11-03 02:45 UTC",
+    "sha": "02c38a6d959f0afd82e44d9d67d396266e6ab4a3"
   },
   "filmcraft": {
-    "at": "2026-11-02 10:03 UTC",
-    "sha": "68919ed87aa6a097a4d21414ec7c438883f5fe22"
+    "at": "2026-11-03 02:45 UTC",
+    "sha": "eb59ec09daaea519c9c8fffa404a594ae50d00e0"
   },
   "gridcraft": {
-    "at": "2026-11-02 20:37 UTC",
-    "sha": "ef927e2e7130cf50f1694dfde257269e9ab2229d"
+    "at": "2026-11-03 02:45 UTC",
+    "sha": "85e51e009c24fad47575f04d3c08f12342615d82"
   },
   "lightcraft": {
     "at": "2026-11-02 10:03 UTC",
     "sha": "ebe247710867f8c47512fab1ff488f17815161e5"
   },
   "pdfcraft": {
-    "at": "2026-11-02 20:37 UTC",
-    "sha": "168a3cb91e90333a7069f2bac63835140c6d0f5b"
+    "at": "2026-11-03 02:45 UTC",
+    "sha": "3936f93a1479366a951206fc6d3094680fe2d3dc"
   },
   "photocraft": {
-    "at": "2026-11-02 20:37 UTC",
-    "sha": "f8e393fdb6f8d0e5da193b03e86e90d278fcc707"
+    "at": "2026-11-03 02:45 UTC",
+    "sha": "327c4cc82e737a3e0af7c147a477126d77525495"
   },
   "soundcraft": {
-    "at": "2026-11-02 20:37 UTC",
-    "sha": "e5d31749299b897ad3743fee9aeffd82712a748c"
+    "at": "2026-11-03 02:45 UTC",
+    "sha": "b35dd0f9eb0c08a198c1306021bd138f3a22d87c"
   },
   "vectorcraft": {
-    "at": "2026-11-02 20:37 UTC",
-    "sha": "4ee0ef231aa31f50192f0072554fa390957532bf"
+    "at": "2026-11-03 02:45 UTC",
+    "sha": "11862f61198c8f62c0b22b6c9a331cc5950ac98d"
   },
   "wordcraft": {
-    "at": "2026-11-02 20:37 UTC",
-    "sha": "bbe3547dd11bb5f613f3aa893b12f593910644de"
+    "at": "2026-11-03 02:45 UTC",
+    "sha": "b47079fc791595fd84bb499d64dcd3f0624ef35a"
   }
 }
