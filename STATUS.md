@@ -1,42 +1,43 @@
 # Status
 
-Last run 2026-11-03 18:10 UTC.
+Last run 2026-11-03 23:47 UTC.
 
 | Repo | Commit | Result |
 | --- | --- | --- |
-| cadcraft | b639b18f69 | scanned |
-| craft-libs | 6865897f14 | scanned |
-| deckcraft | aa13eeb45e | scanned |
-| designcraft | ad3b32fbf6 | scanned |
-| effectcraft | b7dee07cf4 | scanned |
-| figcraft | 35684eaa02 | scanned |
-| filmcraft | 57dc82ea20 | scanned |
-| gridcraft | df137b8ee8 | scanned |
-| lightcraft | 389ab177db | scanned |
-| pdfcraft | ecdd1e658c | scanned |
-| photocraft | d07684a379 | scanned |
-| soundcraft | b11ffe73ae | scanned |
-| vectorcraft | ce9761d08f | scanned |
-| wordcraft | ae5c65b9dd | scanned |
+| cadcraft | b1b3754ffa | scanned |
+| craft-i18n | a5977f8e7a | scanned |
+| craft-libs | 01315d9c92 | scanned |
+| deckcraft | 19dceffd0b | scanned |
+| designcraft | f889d7c47b | scanned |
+| effectcraft | 8d20cf0c3a | scanned |
+| figcraft | 4bb35d5266 | scanned |
+| filmcraft | 073ef5549f | scanned |
+| gridcraft | 014f030a15 | scanned |
+| lightcraft | 5c96a70058 | scanned |
+| pdfcraft | 801fd3aa67 | scanned |
+| photocraft | 81bd97376f | scanned |
+| soundcraft | b7d78c7e9e | scanned |
+| vectorcraft | 4338ef75e3 | scanned |
+| wordcraft | 969df57ea2 | scanned |
 
 ## Last good scan
 
 | Repo | Commit | When | SonarCloud |
 | --- | --- | --- | --- |
-| cadcraft | b639b18f69 | 2026-11-03 18:10 UTC | [zuujiscom_cadcraft](https://sonarcloud.io/project/overview?id=zuujiscom_cadcraft) |
+| cadcraft | b1b3754ffa | 2026-11-03 23:47 UTC | [zuujiscom_cadcraft](https://sonarcloud.io/project/overview?id=zuujiscom_cadcraft) |
 | craft-ai-integrations | 950a8e17a2 | 2026-11-02 01:50 UTC | [zuujiscom_craft-ai-integrations](https://sonarcloud.io/project/overview?id=zuujiscom_craft-ai-integrations) |
 | craft-fonts | aced4137c0 | 2026-10-25 16:55 UTC | [zuujiscom_craft-fonts](https://sonarcloud.io/project/overview?id=zuujiscom_craft-fonts) |
-| craft-i18n | 20467b6355 | 2026-11-03 02:45 UTC | [zuujiscom_craft-i18n](https://sonarcloud.io/project/overview?id=zuujiscom_craft-i18n) |
-| craft-libs | 6865897f14 | 2026-11-03 18:10 UTC | [zuujiscom_craft-libs](https://sonarcloud.io/project/overview?id=zuujiscom_craft-libs) |
-| deckcraft | aa13eeb45e | 2026-11-03 18:10 UTC | [zuujiscom_deckcraft](https://sonarcloud.io/project/overview?id=zuujiscom_deckcraft) |
-| designcraft | ad3b32fbf6 | 2026-11-03 18:10 UTC | [zuujiscom_designcraft](https://sonarcloud.io/project/overview?id=zuujiscom_designcraft) |
-| effectcraft | b7dee07cf4 | 2026-11-03 18:10 UTC | [zuujiscom_effectcraft](https://sonarcloud.io/project/overview?id=zuujiscom_effectcraft) |
-| figcraft | 35684eaa02 | 2026-11-03 18:10 UTC | [zuujiscom_figcraft](https://sonarcloud.io/project/overview?id=zuujiscom_figcraft) |
-| filmcraft | 57dc82ea20 | 2026-11-03 18:10 UTC | [zuujiscom_filmcraft](https://sonarcloud.io/project/overview?id=zuujiscom_filmcraft) |
-| gridcraft | df137b8ee8 | 2026-11-03 18:10 UTC | [zuujiscom_gridcraft](https://sonarcloud.io/project/overview?id=zuujiscom_gridcraft) |
-| lightcraft | 389ab177db | 2026-11-03 18:10 UTC | [zuujiscom_lightcraft](https://sonarcloud.io/project/overview?id=zuujiscom_lightcraft) |
-| pdfcraft | ecdd1e658c | 2026-11-03 18:10 UTC | [zuujiscom_pdfcraft](https://sonarcloud.io/project/overview?id=zuujiscom_pdfcraft) |
-| photocraft | d07684a379 | 2026-11-03 18:10 UTC | [zuujiscom_photocraft](https://sonarcloud.io/project/overview?id=zuujiscom_photocraft) |
-| soundcraft | b11ffe73ae | 2026-11-03 18:10 UTC | [zuujiscom_soundcraft](https://sonarcloud.io/project/overview?id=zuujiscom_soundcraft) |
-| vectorcraft | ce9761d08f | 2026-11-03 18:10 UTC | [zuujiscom_vectorcraft](https://sonarcloud.io/project/overview?id=zuujiscom_vectorcraft) |
-| wordcraft | ae5c65b9dd | 2026-11-03 18:10 UTC | [zuujiscom_wordcraft](https://sonarcloud.io/project/overview?id=zuujiscom_wordcraft) |
+| craft-i18n | a5977f8e7a | 2026-11-03 23:47 UTC | [zuujiscom_craft-i18n](https://sonarcloud.io/project/overview?id=zuujiscom_craft-i18n) |
+| craft-libs | 01315d9c92 | 2026-11-03 23:47 UTC | [zuujiscom_craft-libs](https://sonarcloud.io/project/overview?id=zuujiscom_craft-libs) |
+| deckcraft | 19dceffd0b | 2026-11-03 23:47 UTC | [zuujiscom_deckcraft](https://sonarcloud.io/project/overview?id=zuujiscom_deckcraft) |
+| designcraft | f889d7c47b | 2026-11-03 23:47 UTC | [zuujiscom_designcraft](https://sonarcloud.io/project/overview?id=zuujiscom_designcraft) |
+| effectcraft | 8d20cf0c3a | 2026-11-03 23:47 UTC | [zuujiscom_effectcraft](https://sonarcloud.io/project/overview?id=zuujiscom_effectcraft) |
+| figcraft | 4bb35d5266 | 2026-11-03 23:47 UTC | [zuujiscom_figcraft](https://sonarcloud.io/project/overview?id=zuujiscom_figcraft) |
+| filmcraft | 073ef5549f | 2026-11-03 23:47 UTC | [zuujiscom_filmcraft](https://sonarcloud.io/project/overview?id=zuujiscom_filmcraft) |
+| gridcraft | 014f030a15 | 2026-11-03 23:47 UTC | [zuujiscom_gridcraft](https://sonarcloud.io/project/overview?id=zuujiscom_gridcraft) |
+| lightcraft | 5c96a70058 | 2026-11-03 23:47 UTC | [zuujiscom_lightcraft](https://sonarcloud.io/project/overview?id=zuujiscom_lightcraft) |
+| pdfcraft | 801fd3aa67 | 2026-11-03 23:47 UTC | [zuujiscom_pdfcraft](https://sonarcloud.io/project/overview?id=zuujiscom_pdfcraft) |
+| photocraft | 81bd97376f | 2026-11-03 23:47 UTC | [zuujiscom_photocraft](https://sonarcloud.io/project/overview?id=zuujiscom_photocraft) |
+| soundcraft | b7d78c7e9e | 2026-11-03 23:47 UTC | [zuujiscom_soundcraft](https://sonarcloud.io/project/overview?id=zuujiscom_soundcraft) |
+| vectorcraft | 4338ef75e3 | 2026-11-03 23:47 UTC | [zuujiscom_vectorcraft](https://sonarcloud.io/project/overview?id=zuujiscom_vectorcraft) |
+| wordcraft | 969df57ea2 | 2026-11-03 23:47 UTC | [zuujiscom_wordcraft](https://sonarcloud.io/project/overview?id=zuujiscom_wordcraft) |
