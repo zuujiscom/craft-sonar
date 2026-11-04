@@ -12,24 +12,24 @@
     "sha": "aced4137c022f1f587624d48e81ec77e1914a9cc"
   },
   "craft-i18n": {
-    "at": "2026-11-04 07:06 UTC",
-    "sha": "575cfdef63227b14daf173b8cc87928bfdfa325e"
+    "at": "2026-11-04 16:39 UTC",
+    "sha": "c199dc459eb3f1f105f87edaf5b0b1f8f32ca846"
   },
   "craft-libs": {
-    "at": "2026-11-04 07:06 UTC",
-    "sha": "fe4e2ff3efe2dfc5c6f4871c968a9fb561fd5305"
+    "at": "2026-11-04 16:39 UTC",
+    "sha": "893eafc086baf4816932342e0a2f982c5eaf3714"
   },
   "deckcraft": {
     "at": "2026-11-04 07:06 UTC",
     "sha": "23ac4f7efdbd1e538bd9a7869584d4adeb9039b0"
   },
   "designcraft": {
-    "at": "2026-11-04 07:06 UTC",
-    "sha": "a4017a3cda704850fcb6ed9f8513fdb2e7fb04c1"
+    "at": "2026-11-04 16:39 UTC",
+    "sha": "632df6178a85027b34d0db706e35c0e88b9d5ec2"
   },
   "effectcraft": {
-    "at": "2026-11-04 07:06 UTC",
-    "sha": "58ca9c1c1b163fdada41291847f3d0f7559339b2"
+    "at": "2026-11-04 16:39 UTC",
+    "sha": "bb78d55825adc879ae522c18ac57c4ce5690318d"
   },
   "figcraft": {
     "at": "2026-11-04 07:06 UTC",
@@ -44,27 +44,27 @@
     "sha": "632e4a1bc51ee86b3f0a55e95ee78def391aab30"
   },
   "lightcraft": {
-    "at": "2026-11-04 07:06 UTC",
-    "sha": "4d42507bbcc180df831435c8ef2c29740b5216aa"
+    "at": "2026-11-04 16:39 UTC",
+    "sha": "ae7ac42a109e3a18481c916d55516ed60535e49f"
   },
   "pdfcraft": {
-    "at": "2026-11-04 07:06 UTC",
-    "sha": "8bb0528bed785283452263b0290321ccf95859be"
+    "at": "2026-11-04 16:39 UTC",
+    "sha": "8717a085ffec6b6de3ffa86de9c0c51da1488000"
   },
   "photocraft": {
-    "at": "2026-11-04 07:06 UTC",
-    "sha": "37a01ca8746c121170644a07968d11263ef64407"
+    "at": "2026-11-04 16:39 UTC",
+    "sha": "5617e00ca05adf7658afa4ec68908cb1889edf79"
   },
   "soundcraft": {
     "at": "2026-11-04 07:06 UTC",
     "sha": "5fabf28c315ee72ad5c0234beeb35ec832c11476"
   },
   "vectorcraft": {
-    "at": "2026-11-04 07:06 UTC",
-    "sha": "0ccf9d4fdd2690f87f57f83c39a18b012ada3dfe"
+    "at": "2026-11-04 16:39 UTC",
+    "sha": "0a311b6d20e4f4a197dd0e9ebabbb53012b46269"
   },
   "wordcraft": {
-    "at": "2026-11-04 07:06 UTC",
-    "sha": "08afab50b6a1ed19f9af55bb9f74d18f5e17bfa0"
+    "at": "2026-11-04 16:39 UTC",
+    "sha": "92ecb40105f56b674c18e3e88557e1456591868b"
   }
 }
