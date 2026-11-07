@@ -1,14 +1,11 @@
 # Status
 
-Last run 2026-11-07 06:37 UTC.
+Last run 2026-11-07 13:32 UTC.
 
 | Repo | Commit | Result |
 | --- | --- | --- |
-| designcraft | e977f82558 | scanned |
-| effectcraft | bb2d2005ce | scanned |
-| figcraft | 3635c23070 | scanned |
-| photocraft | f68e227026 | scanned |
-| vectorcraft | ff9deee46d | scanned |
+| deckcraft | 170c5591b5 | scanned |
+| designcraft | e692677a18 | scanned |
 
 ## Last good scan
 
@@ -19,8 +16,8 @@ Last run 2026-11-07 06:37 UTC.
 | craft-fonts | aced4137c0 | 2026-10-25 16:55 UTC | [zuujiscom_craft-fonts](https://sonarcloud.io/project/overview?id=zuujiscom_craft-fonts) |
 | craft-i18n | 7d5030f59f | 2026-11-06 17:51 UTC | [zuujiscom_craft-i18n](https://sonarcloud.io/project/overview?id=zuujiscom_craft-i18n) |
 | craft-libs | fd5e2feff6 | 2026-11-06 17:51 UTC | [zuujiscom_craft-libs](https://sonarcloud.io/project/overview?id=zuujiscom_craft-libs) |
-| deckcraft | 159ed07eb3 | 2026-11-06 17:51 UTC | [zuujiscom_deckcraft](https://sonarcloud.io/project/overview?id=zuujiscom_deckcraft) |
-| designcraft | e977f82558 | 2026-11-07 06:37 UTC | [zuujiscom_designcraft](https://sonarcloud.io/project/overview?id=zuujiscom_designcraft) |
+| deckcraft | 170c5591b5 | 2026-11-07 13:32 UTC | [zuujiscom_deckcraft](https://sonarcloud.io/project/overview?id=zuujiscom_deckcraft) |
+| designcraft | e692677a18 | 2026-11-07 13:32 UTC | [zuujiscom_designcraft](https://sonarcloud.io/project/overview?id=zuujiscom_designcraft) |
 | effectcraft | bb2d2005ce | 2026-11-07 06:37 UTC | [zuujiscom_effectcraft](https://sonarcloud.io/project/overview?id=zuujiscom_effectcraft) |
 | figcraft | 3635c23070 | 2026-11-07 06:37 UTC | [zuujiscom_figcraft](https://sonarcloud.io/project/overview?id=zuujiscom_figcraft) |
 | filmcraft | da535c1843 | 2026-11-06 17:51 UTC | [zuujiscom_filmcraft](https://sonarcloud.io/project/overview?id=zuujiscom_filmcraft) |
